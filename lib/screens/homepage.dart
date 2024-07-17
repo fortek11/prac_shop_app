@@ -10,10 +10,7 @@ import 'package:provider/provider.dart';
 
 import '../providers/cart.dart';
 
-
 enum Filters { ShowAll, ShowFav }
-
-
 
 class HomePage extends StatelessWidget {
   @override
@@ -22,7 +19,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       drawer: MainDrawer(),
       appBar: AppBar(
-        title: Text('MyShopApp'),
+        title: Text('Akshat Major Project'),
         actions: [
           PopupMenuButton(
             itemBuilder: (context) => [
@@ -58,7 +55,6 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: ProductGrid(),
-      
     );
   }
 }
